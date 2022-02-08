@@ -3,7 +3,7 @@
   padding-bottom: 94px;
 }
 
-.information-item {
+.information-list__item {
   width: 270px;
   &:not(:last-child) {
     margin-right: 30px;
@@ -14,7 +14,7 @@
   display: flex;
 }
 
-.information-titel {
+.information-list__titel {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -24,7 +24,7 @@
   color: var(--title-color);
 }
 
-.information-after-titel {
+.information-list__after-titel {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -32,7 +32,7 @@
   color: #757575;
 }
 
-.information-svg {
+.information-list__svg {
   display: flex;
   margin-bottom: 30px;
   align-items: center;
@@ -42,8 +42,4 @@
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
-}
-
-.information-list-item:not(:last-child) {
-  margin-right: 30px;
 }

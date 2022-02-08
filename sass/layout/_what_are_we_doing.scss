@@ -1,7 +1,7 @@
 .services {
   padding-bottom: 94px;
 }
-.work {
+.services__title {
   margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
@@ -11,16 +11,16 @@
   color: var(--title-color);
 }
 
-.work-list {
+.services-list {
   display: flex;
 }
 
-.work-item {
+.services-list__item {
   position: relative;
   &:not(:last-child) {
     margin-right: 30px;
   }
-  & > p {
+  & > .services-list__text {
     padding-top: 27px;
     padding-bottom: 27px;
     width: 370px;
