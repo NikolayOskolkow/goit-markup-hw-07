@@ -1,6 +1,10 @@
 .portfolio {
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .filters {
@@ -8,14 +12,22 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .filters-item {
   &:not(:last-child) {
     margin-right: 8px;
   }
-  &:nth-child(-n + 3) {
-    margin-bottom: 15px;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    &:nth-child(-n + 3) {
+      margin-bottom: 15px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
   }
   // :not(:last-child) {
   //   margin-right: 8px;
@@ -51,11 +63,22 @@
   & h2 {
     margin-bottom: 4px;
   }
+  @media screen and (min-width: 768px) {
+    margin-right: -30px;
+  }
 }
 
 .project-item {
+  width: 100%;
   // margin-right: 30px;
   margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    margin-right: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 
 .portfolio-link:hover,
@@ -78,19 +101,27 @@
 }
 
 .project-text {
-  padding: 20px;
+  flex-grow: 1;
   border: 1px solid #eeeeee;
+  padding: 20px;
+
   border-top: none;
   // width: 370px;
 }
 
 .portfolio-link {
+  flex-direction: column;
+  height: 100%;
+
   transition: var(--shadow-time);
-  display: block;
+  display: flex;
   text-decoration: var(--decoration-none);
 }
 
-.project-img-text {
+.project-item-text-wraper {
+  overflow-y: scroll;
+  display: flex;
+  align-items: center;
   height: 100%;
   transition: transform 250ms;
   padding: 64px 24px;
@@ -107,6 +138,9 @@
   &.project-item:hover &,
   .project-item:hover & {
     transform: translateY(0);
+  }
+  @media screen and (min-width: 1200px) {
+    overflow: hidden;
   }
 }
 
