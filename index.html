@@ -22,10 +22,11 @@
 
 <body>
     <!-- header -->
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header__container">
-        <nav class="nav">
             <a class="link nav__logo" lang="en" href="./index.html">Web<span>Studio</span></a>
+        <nav class="nav">
+            
             <ul class="nav-list">
                 <li class="nav-list__item"><a class="link nav-list__link current" href="./index.html">Студия</a></li>
                 <li class="nav-list__item"><a class="link nav-list__link" href="./portfolio.html">Портфолио</a></li>
@@ -51,8 +52,76 @@
             </li>
         </ul>
         </div>
+        <button type="button" class="menu-open-btn" data-menu-open>
+            <svg class="menu-open-svg" width="24" height="16">
+                <use href="img/sprite/icons.svg#icon-open-menu">
+                </use>
+            </svg>
+        </button>
         </div>
-    </header> -->
+        <div class="mob-menu" data-menu>
+            <div class="container">
+                <div class="mob-menu-top">
+            <button type="button" class="menu-close-btn" data-menu-close>
+                    <svg class="menu-close-svg" width="19" height="19">
+                        <use href="img/sprite/icons.svg#icon-close-menu">
+                        </use>
+                    </svg>    
+            </button>
+                <ul class="mob-menu-list">
+                    <li class="mob-menu-list_item"><a class="link nav-list__link" href="./index.html">Студия</a></li>
+                    <li class="mob-menu-list_item"><a class="link nav-list__link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="mob-menu-list_item"><a class="link nav-list__link" href="">Контакты</a></li>
+                </ul>
+                </div>
+                <div class="mob-menu-botton">
+                <ul class="mob-contacts-list">
+                    <li class="mob-contacts-list__item">
+                        <a class="link mob-contacts-list__link mob-contacts-lel" href="tel:+380961111111">
+                    
+                            +38 096 111 11 11</a>
+                    </li>
+                    <li class="mob-contacts-list__item">
+                        <a class="link contacts-list__link mob-contacts-mail" href="mailto:info@devstudio.com">
+                            
+                            info@devstudio.com</a>
+                    </li>
+                    
+                </ul>
+                <ul class="mob-social-list">
+                    <li class="mob-social-list__item">
+                        <a class="link mob-social__link" href="" lang="en">Instagram</a>
+                        <!-- <svg class="line-svg" width="15" height="22">
+                            <use href="img/sprite/icons.svg#icon-close-menu">
+                            </use>
+                        </svg> -->
+                    </li>
+                    <li class="mob-social-list__item">
+                        <a class="link mob-social__link" href="" lang="en">Twitter</a>
+                        <!-- <svg class="line-svg" width="2" height="22">
+                            <use href="img/sprite/icons.svg#icon-Vertical-Line-1">
+                            </use>
+                        </svg> -->
+                    </li>
+                    <li class="mob-social-list__item">
+                        <a class="link mob-social__link" href="" lang="en">Facebook</a>
+                        <!-- <svg class="line-svg" width="1" height="22">
+                            <use href="img/sprite/icons.svg#icon-Vertical-Line-1">
+                            </use>
+                        </svg> -->
+                    </li>
+                    <li class="mob-social-list__item">
+                        <a class="link mob-social__link" href="" lang="en">Linkeadin</a>
+                        <!-- <svg class="line-svg" width="1" height="22">
+                            <use href="img/sprite/icons.svg#icon-Vertical-Line-1">
+                            </use>
+                        </svg> -->
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </header>
     <!-- main -->
     <main>
         <!-- hero -->
@@ -423,7 +492,7 @@
         </div>
         <div class="mailing-list">
             <p class="mailing-list__title">Подпишитесь на рассылку</p>
-            <form action="#">
+            <form class="mailing-list__form" action="#">
             <label for="email"></label>
             <input class="mailing-list__input" type="email"
             name="email"
@@ -518,6 +587,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

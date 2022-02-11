@@ -5,14 +5,36 @@
 }
 
 .footer > .container {
-  display: block;
-
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    flex-wrap: nowrap;
+    text-align: start;
+  }
   // align-items: baseline;
   // display: flex;
 }
 
 .addres {
   margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 70px;
+    }
+    width: 42%;
+    margin-bottom: 0;
+  }
   // :not(:last-child) {
   //   margin-right: 70px;}
 }
@@ -22,8 +44,8 @@
   margin-bottom: 20px;
   font-family: "Raleway", "sans-serif";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #2196f3;
   & span {
@@ -33,6 +55,10 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #ffffff;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
   }
 }
 
@@ -62,6 +88,14 @@
 
 .footer-adres {
   margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 90px;
+    margin-bottom: -60px;
+    width: 31%;
+  }
 }
 
 .footer-adres__title {
@@ -76,6 +110,12 @@
 
 .footer-adres__list {
   display: flex;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
+  }
 }
 
 .footer-adres__item:not(:last-child) {
@@ -102,7 +142,12 @@
 }
 
 .mailing-list {
-  margin-left: auto;
+  width: 100%;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+
+  // margin-left: auto;
 }
 
 .mailing-list__title {
@@ -115,7 +160,17 @@
   color: #ffffff;
 }
 
-.mailin-glist input {
+.mailing-list__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+.mailing-list input {
   cursor: pointer;
 }
 
@@ -142,6 +197,12 @@
     align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   }
 }
 
@@ -180,7 +241,9 @@
 }
 
 .mailing-list .mailing-list__input {
-  // margin-right: 12px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+  }
 }
 
 // sadasdasdadsasdasd
