@@ -302,15 +302,6 @@ button {
 }
 
 .checbox-label {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -318,7 +309,7 @@ button {
   color: #757575;
 }
 
-.checbox-label span {
+.checbox-label .checbox-svg {
   cursor: pointer;
   fill: transparent;
   display: -webkit-box;
@@ -673,8 +664,9 @@ button {
   border: none;
   background: #ffffff;
   position: absolute;
-  right: 23%;
+  right: 25px;
   top: 21px;
+  padding: 0;
 }
 
 .mob-menu-list_item {
@@ -910,9 +902,14 @@ h1 {
   }
 }
 
+.services {
+  display: none;
+}
+
 @media screen and (min-width: 1200px) {
   .services {
     padding-bottom: 94px;
+    display: block;
   }
 }
 
@@ -1511,7 +1508,7 @@ h1 {
   margin-bottom: 20px;
   font-family: "Raleway", "sans-serif";
   font-weight: 700;
-  font-size: 24;
+  font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: #2196f3;

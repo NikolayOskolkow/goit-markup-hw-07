@@ -143,15 +143,15 @@
 }
 
 .checbox-label {
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // display: flex;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
-  & span {
+  & .checbox-svg {
     cursor: pointer;
     fill: transparent;
     display: flex;
