@@ -69,7 +69,7 @@
                     </svg>    
             </button>
                 <ul class="mob-menu-list">
-                    <li class="mob-menu-list_item"><a class="link nav-list__link" href="./index.html">Студия</a></li>
+                    <li class="mob-menu-list_item"><a class="link nav-list__link nav-list__current" href="./index.html">Студия</a></li>
                     <li class="mob-menu-list_item"><a class="link nav-list__link" href="./portfolio.html">Портфолио</a></li>
                     <li class="mob-menu-list_item"><a class="link nav-list__link" href="">Контакты</a></li>
                 </ul>
@@ -91,31 +91,15 @@
                 <ul class="mob-social-list">
                     <li class="mob-social-list__item">
                         <a class="link mob-social__link" href="" lang="en">Instagram</a>
-                        <!-- <svg class="line-svg" width="15" height="22">
-                            <use href="img/sprite/icons.svg#icon-close-menu">
-                            </use>
-                        </svg> -->
                     </li>
                     <li class="mob-social-list__item">
                         <a class="link mob-social__link" href="" lang="en">Twitter</a>
-                        <!-- <svg class="line-svg" width="2" height="22">
-                            <use href="img/sprite/icons.svg#icon-Vertical-Line-1">
-                            </use>
-                        </svg> -->
                     </li>
                     <li class="mob-social-list__item">
                         <a class="link mob-social__link" href="" lang="en">Facebook</a>
-                        <!-- <svg class="line-svg" width="1" height="22">
-                            <use href="img/sprite/icons.svg#icon-Vertical-Line-1">
-                            </use>
-                        </svg> -->
                     </li>
                     <li class="mob-social-list__item">
                         <a class="link mob-social__link" href="" lang="en">Linkeadin</a>
-                        <!-- <svg class="line-svg" width="1" height="22">
-                            <use href="img/sprite/icons.svg#icon-Vertical-Line-1">
-                            </use>
-                        </svg> -->
                     </li>
                 </ul>
             </div>
@@ -211,7 +195,23 @@
             <h2 class="team__title">Наша команда</h2>
             <ul class="team-list">
                 <li class="team-list__item">
-                    <img src="./img/our_team/img.jpg" alt="Парень, участник команды" width="270" height="260">
+                    <picture>
+                        <source 
+                        srcset="./img/our_team/img.jpg 1x,
+                        ./img/our_team/img-2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                        />
+                        <source 
+                        srcset="./img/our_team/img-tabl-1x.jpg 1x,
+                        ./img/our_team/img-tabl-2x.jpg 2x" 
+                        media="(min-width: 768px)" />
+                        <source srcset="./img/our_team/img-mob-1x.jpg 1x,
+                        ./img/our_team/img-mob-2x.jpg 2x"
+                         media="(min-width: 320px)" />
+                        <img
+                            src="./img/our_team/img.jpg" 
+                            alt="Парень, участник команды" />
+                    </picture>
                     <div class="team-list__name">
                     <h3 class="team-list__title">Игорь Демьяненко</h3>
                     <p class="team-list__after-title" lang="en">Product Designer</p>
@@ -252,7 +252,15 @@
                 </div>
                 </li>
                 <li class="team-list__item">
-                    <img src="./img/our_team/img1.jpg" alt="Девушка, участница команды" width="270" height="260">
+                        <picture>
+                            <source srcset="./img/our_team/img1.jpg 1x,
+                                                ./img/our_team/img1-2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./img/our_team/img1-tabl-1x.jpg 1x,
+                                                ./img/our_team/img1-tabl-2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./img/our_team/img1-mob-1x.jpg 1x,
+                                                ./img/our_team/img1-mob-2x.jpg 2x" media="(min-width: 320px)" />
+                            <img src="./img/our_team/img1.jpg" alt="Парень, участник команды" />
+                        </picture>
                     <div class="team-list__name">
                     <h3 class="team-list__title">Ольга Репина</h3>
                     <p class="team-list__after-title" lang="en">Frontend Developer</p>
@@ -293,7 +301,18 @@
                     </div>
                 </li>
                 <li class="team-list__item">
-                    <img src="./img/our_team/img2.jpg" alt="Парень, участник команды" width="270" height="260">
+                        <picture>
+                            <source srcset="./img/our_team/img2.jpg 1x,
+                                            ./img/our_team/img2-2x.jpg 2x" 
+                                            media="(min-width: 1200px)" />
+                            <source srcset="./img/our_team/img2-tabl-1x.jpg 1x,
+                                            ./img/our_team/img2-tabl-2x.jpg 2x" 
+                                            media="(min-width: 768px)" />
+                            <source srcset="./img/our_team/img2-mob-1x.jpg 1x,
+                                            ./img/our_team/img2-mob-2x.jpg 2x" 
+                                            media="(min-width: 320px)" />
+                            <img src="./img/our_team/img2.jpg" alt="Парень, участник команды" />
+                        </picture>
                     <div class="team-list__name">
                     <h3 class="team-list__title">Николай Тарасов</h3>
                     <p class="team-list__after-title" lang="en">Marketing</p>
@@ -334,7 +353,18 @@
                     </div>
                 </li>
                 <li class="team-list__item">
-                    <img src="./img/our_team/img3.jpg" alt="Парень, участник команды" width="270" height="260">
+                        <picture>
+                            <source srcset="./img/our_team/img3.jpg 1x,
+                                            ./img/our_team/img3-2x.jpg 2x" 
+                                            media="(min-width: 1200px)" />
+                            <source srcset="./img/our_team/img3-tabl-1x.jpg 1x,
+                                            ./img/our_team/img3-tabl-2x.jpg 2x"
+                                             media="(min-width: 768px)" />
+                            <source srcset="./img/our_team/img3-mob-1x.jpg 1x,
+                                            ./img/our_team/img3-mob-2x.jpg 2x"
+                                             media="(min-width: 320px)" />
+                            <img src="./img/our_team/img3.jpg" alt="Парень, участник команды" />
+                        </picture>
                     <div class="team-list__name">
                     <h3 class="team-list__title">Михаил Ермаков</h3>
                     <p class="team-list__after-title" lang="en">UI Designer</p>
