@@ -1,4 +1,5 @@
 .backdrop {
+  overflow-y: scroll;
   position: fixed;
   top: 0;
   background-color: rgba(0, 0, 0, 0.2);
@@ -8,19 +9,20 @@
 }
 
 .modal {
-  width: 90vw;
+  max-width: 450px;
+  width: 100%;
   min-height: 581px;
   background-color: #ffffff;
   border-radius: 4px;
-  position: relative;
-  margin: 0 auto;
-  // position: absolute;
+
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
-  @media screen and (min-width: 480px) {
-    width: 400px;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
   }
 }
 
@@ -148,13 +150,22 @@
   // display: flex;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  @media screen and (min-width: 480px) {
+    line-height: 1.16;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1.71;
+  }
   & .checbox-svg {
+    vertical-align: text-top;
     cursor: pointer;
     fill: transparent;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     margin-right: 7px;
@@ -177,7 +188,7 @@
 
 .treaty {
   transition: var(--hover-color-time);
-  margin-left: 5px;
+
   color: #2196f3;
   &:hover,
   &:focus {
